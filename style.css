@@ -1,0 +1,163 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    background-color: #090C55;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23090C55' cx='50' cy='0' r='50'/%3E%3Cg fill='%230a165e' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%230b1f68' cx='50' cy='100' r='50'/%3E%3Cg fill='%230b2771' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%230c307a' cx='50' cy='200' r='50'/%3E%3Cg fill='%230d3983' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%230e428c' cx='50' cy='300' r='50'/%3E%3Cg fill='%23104b95' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%2313549e' cx='50' cy='400' r='50'/%3E%3Cg fill='%23165da7' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%231a67af' cx='50' cy='500' r='50'/%3E%3Cg fill='%231f70b8' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23247ac0' cx='50' cy='600' r='50'/%3E%3Cg fill='%232a83c8' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23318dd1' cx='50' cy='700' r='50'/%3E%3Cg fill='%233897d9' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%233fa0e0' cx='50' cy='800' r='50'/%3E%3Cg fill='%2347aae8' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%234fb4f0' cx='50' cy='900' r='50'/%3E%3Cg fill='%2357bef7' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%2360C8FF' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: contain;
+font-family: Arial, sans-serif;   
+}
+header {
+    height: 67px;
+}
+
+nav {
+    height: 47px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 8px;
+}
+
+.container-image img{
+    cursor: pointer;
+}
+
+.avatar{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.menu{
+    width: 30px;
+    height: 30px;
+}
+.links{
+    margin-right: 15px;
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+
+}
+.container-image{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90px;
+}
+.links a{
+    text-decoration:none;
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+}
+.links a:hover{
+    text-decoration: underline;
+}
+main{
+    height: calc(100%-60px-65);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+main .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+
+}
+main .container figure{
+    max-height: 92px;
+}
+main .container figure img{
+    height: 100%;
+}
+main .container .searcher-buttons {
+display: flex;
+gap: 10px;
+}
+main .container .searcher-buttons button{
+    border: none;
+    border-radius: 4px;
+    background-color: #303134;
+    padding: 12px;
+    color: whitesmoke;
+}
+main .container p{
+    font-size: small;
+    color: whitesmoke;
+}
+main .container .searcher{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 8px 12px;
+    height: 40px;
+    width: 450px;
+    border: 1px solid gray;
+    border-radius: 24px;
+}
+
+main .container .searcher input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: whitesmoke;
+}
+
+main .container .searcher button{
+    border: none;
+    background-color: transparent;
+}
+.search-logo{
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background-position: center;
+}
+.micro-logo{
+    display: inline-block;
+    width: 32px;
+    height:32px;
+    background-image: url(https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-512.png);
+    background-size: cover;
+    background-position: center;
+}
+.camera-logo{
+    display: inline-block;
+    width: 32px;
+    height:32px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Google_Lens_Icon.svg/1200px-Google_Lens_Icon.svg.png);
+    background-size: cover;
+    background-position: center;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    background-color:transparent;
+}
+footer section{
+    display: flex;
+    height: 50%;
+    padding: 0 15px;
+    align-items: center;
+    color: #090C55;
+}
+footer section.more-info{
+    border-top: gray solid 1px;
+    display: flex;
+    justify-content: space-between;
+}
+footer section.more-info div{
+    display: flex;
+    gap: 18px;
+}
+footer section.more-info div a{
+    text-decoration: none;
+}
